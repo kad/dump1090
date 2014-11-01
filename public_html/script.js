@@ -415,6 +415,8 @@ function refreshTableInfo() {
 	html += '<td onclick="setASC_DESC(\'6\');sortTable(\'tableinfo\',\'7\');" ' +
 	    'align="right">Msgs</td>';
 	html += '<td onclick="setASC_DESC(\'7\');sortTable(\'tableinfo\',\'8\');" ' +
+	    'align="right">Signal</td>';
+	html += '<td onclick="setASC_DESC(\'8\');sortTable(\'tableinfo\',\'9\');" ' +
 	    'align="right">Seen</td></thead><tbody>';
 	for (var tablep in Planes) {
 		var tableplane = Planes[tablep]
@@ -487,6 +489,7 @@ function refreshTableInfo() {
     	    }
     	    html += '</td>';
 			html += '<td align="right">' + tableplane.messages + '</td>';
+			html += '<td align="right">' + tableplane.signal + '</td>';
 			html += '<td align="right">' + tableplane.seen + '</td>';
 			html += '</tr>';
 		}
